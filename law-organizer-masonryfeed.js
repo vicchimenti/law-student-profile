@@ -49,10 +49,10 @@
     var hiddenFields = '';
     var openHiddenFields = '<div class="hiddenSearchText visually-hidden">';
     var closeHiddenFields = '</div>';
-    var primaryImageString = '<img src="' + primaryImage + '" class="card-img rounded-circle" alt="' + firstName + ' ' + lastName + ', ' + primaryTitle + '">';
-    var cardTitle = '<h3 class="card-title d-flex justify-content-center justify-content-md-start text-center text-md-start mt-0">' + firstName + ' ' + lastName + '</h3>';
-    var primaryTitleString = '<p class="card-text mb-0 d-flex justify-content-center justify-content-md-start text-center text-md-start">' + primaryTitle + '</p>';
-    var emailAddressString = '<p class="card-text mb-0 d-flex justify-content-center justify-content-md-start text-center text-md-start">' + emailAddress + '</p>';
+    var primaryImageString = '<img src="' + summaryPhoto + '" class="card-img rounded-circle" alt="' + studentName + '">';
+    var cardTitle = '<h3 class="card-title d-flex justify-content-center justify-content-md-start text-center text-md-start mt-0">' + studentName + '</h3>';
+    // var primaryTitleString = '<p class="card-text mb-0 d-flex justify-content-center justify-content-md-start text-center text-md-start">' + primaryTitle + '</p>';
+    // var emailAddressString = '<p class="card-text mb-0 d-flex justify-content-center justify-content-md-start text-center text-md-start">' + emailAddress + '</p>';
     var closeCardTitle = '</h3>';
     var openCardBody = '<div class="card-body">';
     var closeCardBody = '</div>';
@@ -65,7 +65,7 @@
     var anchorWrap = '<div class="visually-hidden">' + anchorTag + '</div>';
     var openCard = '<div class="card h-100 w-100 border-0">'
     var closeCard = '</div>';
-    var beginningHTML = '<div class="lawFacultyWrapper contentItem col flex-fill w-50" aria-label="' + firstName + ' ' + lastName + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="Main">';
+    var beginningHTML = '<div class="lawFacultyWrapper contentItem col flex-fill w-50" aria-label="' + studentName + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="Main">';
     var endingHTML = '</div>';
     var horizontalRule = '<hr class="lawProfileBorderRule" />'
 
