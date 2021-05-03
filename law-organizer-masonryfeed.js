@@ -13,7 +13,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 5.13
+ *      @version 5.14
  */
 
 
@@ -61,7 +61,6 @@
     var closeCard = '</div>';
     var beginningHTML = '<div class="studentProfileMasonry contentItem col flex-fill w-50" aria-label="' + studentName + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="Main">';
     var endingHTML = '</div>';
-    // var horizontalRule = '<hr class="lawProfileBorderRule" />'
 
 
 
@@ -84,54 +83,8 @@
      * */
     if (pullQuote != "") {
 
-        // pullQuoteString = '<blockquote class="blockquote me-1"><span class="card-text studentProfilePullQuote">' + pullQuote + '</span></blockquote>';
-
         pullQuoteString = '<span class="card-text studentProfilePullQuote">' + pullQuote + '</span>';
     }
-
-
-
-
-    /***
-     *  write hidden search fields
-     * 
-     * */
-    // if (secondaryTitle != "") {
-    //     var secondaryTitleHidden = '<span class="visually-hidden secondaryTitle">' + secondaryTitle + '</span>';
-    //     hiddenFields += secondaryTitleHidden;
-    // }
-    // if (education != "") {
-    //     var educationHidden = '<span class="visually-hidden education">' + education + '</span>';
-    //     hiddenFields += educationHidden;
-    // }
-    // if (expertise != "") {
-    //     var expertiseHidden = '<span class="visually-hidden expertise">' + expertise + '</span>';
-    //     hiddenFields += expertiseHidden;
-    // }
-    // if (affiliations != "") {
-    //     var affiliationsHidden = '<span class="visually-hidden affiliations">' + affiliations + '</span>';
-    //     hiddenFields += affiliationsHidden;
-    // }
-    // if (courses != "") {
-    //     var coursesHidden = '<span class="visually-hidden courses">' + courses + '</span>';
-    //     hiddenFields += coursesHidden;
-    // }
-    // if (biography != "") {
-    //     var biographyHidden = '<span class="visually-hidden biography">' + biography + '</span>';
-    //     hiddenFields += biographyHidden;
-    // }
-    // if (publications != "") {
-    //     var publicationsHidden = '<span class="visually-hidden publications">' + publications + '</span>';
-    //     hiddenFields += publicationsHidden;
-    // }
-    // if (activity != "") {
-    //     var activityHidden = '<span class="visually-hidden activity">' + activity + '</span>';
-    //     hiddenFields += activityHidden;
-    // }
-    // if (facultyStatus != "") {
-    //     var facultyStatusyHidden = '<span class="visually-hidden facultyStatus">' + facultyStatus + '</span>';
-    //     hiddenFields += facultyStatusyHidden;
-    // }
 
     
 
