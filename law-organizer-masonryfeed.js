@@ -13,7 +13,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 5.9
+ *      @version 5.10
  */
 
 
@@ -55,11 +55,11 @@
     var pullQuoteString = '<span class="card-text studentProfilePullQuote visually-hidden">No pull quote provided</span>';
     var openCardBody = '<div class="card-body">';
     var closeCardBody = '</div>';
-    var openImageWrapper = '<div class="studentProfile">';
+    var openImageWrapper = '<div class="studentProfile standardContent">';
     var closeImageWrapper = '</div>';
     var openCard = '<div class="card h-100 w-100 border-0">'
     var closeCard = '</div>';
-    var beginningHTML = '<div class="studentProfileMasonry contentItem col flex-fill w-50" aria-label="' + studentName + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="Main">';
+    var beginningHTML = '<div class="studentProfileMasonry contentItem col flex-fill w-50 g-1" aria-label="' + studentName + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="Main">';
     var endingHTML = '</div>';
     // var horizontalRule = '<hr class="lawProfileBorderRule" />'
 
