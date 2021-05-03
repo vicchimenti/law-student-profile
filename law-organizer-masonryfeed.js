@@ -49,23 +49,24 @@
     var hiddenFields = '';
     var openHiddenFields = '<div class="hiddenSearchText visually-hidden">';
     var closeHiddenFields = '</div>';
-    var primaryImageString = '<img src="' + summaryPhoto + '" class="card-img rounded-circle" alt="' + studentName + '">';
-    var cardTitle = '<h3 class="card-title d-flex justify-content-center justify-content-md-start text-center text-md-start mt-0">' + studentName + '</h3>';
+    var primaryImageString = '<img src="' + summaryPhoto + '" class="card-img-top rounded-circle" alt="' + contentName + '">';
+    var cardTitle = '<h3 class="card-title">' + contentName + '</h3>';
+    var cardTitleLink = '<a href="' + fullTextLink + '">' + contentName + '</a>';
     // var primaryTitleString = '<p class="card-text mb-0 d-flex justify-content-center justify-content-md-start text-center text-md-start">' + primaryTitle + '</p>';
     // var emailAddressString = '<p class="card-text mb-0 d-flex justify-content-center justify-content-md-start text-center text-md-start">' + emailAddress + '</p>';
-    var closeCardTitle = '</h3>';
+    // var closeCardTitle = '</h3>';
     var openCardBody = '<div class="card-body">';
     var closeCardBody = '</div>';
-    var openBodyWrapper = '<div class="col-md-8 d-flex align-items-center">';
-    var closeBodyWrapper = '</div>';
-    var openImageWrapper = '<div class="col-md-4 d-flex align-items-center">';
+    // var openBodyWrapper = '<div class="col-md-8 d-flex align-items-center">';
+    // var closeBodyWrapper = '</div>';
+    var openImageWrapper = '<div class="studentProfile standardContent">';
     var closeImageWrapper = '</div>';
-    var openRow = '<div class="row g-0">';
-    var closeRow = '</div>';
-    var anchorWrap = '<div class="visually-hidden">' + anchorTag + '</div>';
+    // var openRow = '<div class="row g-0">';
+    // var closeRow = '</div>';
+    // var anchorWrap = '<div class="visually-hidden">' + anchorTag + '</div>';
     var openCard = '<div class="card h-100 w-100 border-0">'
     var closeCard = '</div>';
-    var beginningHTML = '<div class="lawFacultyWrapper contentItem col flex-fill w-50" aria-label="' + studentName + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="Main">';
+    var beginningHTML = '<div class="studentProfileWrapper contentItem col flex-fill w-50" aria-label="' + studentName + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="Main">';
     var endingHTML = '</div>';
     var horizontalRule = '<hr class="lawProfileBorderRule" />'
 
@@ -77,7 +78,10 @@
      * 
      * */
     if (biography != "") {
-        cardTitle = '<h3 class="card-title d-flex justify-content-center justify-content-md-start text-center text-md-start mt-0"><a href="' + fullTextLink + '" title="' + studentName + '">' + studentName+ '</a></h3>';
+
+        primaryImageString = '<img src="' + summaryPhoto + '" class="card-img-top rounded-circle" alt="' + studentName + '">';
+        cardTitle = '<h3 class="card-title">' + studentName + '</h3>';
+        cardTitleLink = '<a href="' + fullTextLink + '" title="' + studentName + '">' + primaryImageString + cardTitle + '</a>';
     }
 
 
@@ -134,18 +138,18 @@
     document.write(beginningHTML);
     document.write(anchorTag);
     document.write(openCard);
-    document.write(openRow);
+    // document.write(openRow);
     document.write(openImageWrapper);
-    document.write(primaryImageString);
+    document.write(cardTitleLink);
     document.write(closeImageWrapper);
-    document.write(openBodyWrapper);
+    // document.write(openBodyWrapper);
     document.write(openCardBody);
-    document.write(cardTitle);
+    document.write(cardTitleLink);
     document.write(primaryTitleString);
     document.write(emailAddressString);
     document.write(closeCardBody);
-    document.write(closeBodyWrapper);
-    document.write(closeRow);
+    // document.write(closeBodyWrapper);
+    // document.write(closeRow);
     document.write(openHiddenFields);
     document.write(hiddenFields);
     document.write(closeHiddenFields);
