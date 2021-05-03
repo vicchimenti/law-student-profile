@@ -4,7 +4,7 @@
  *      @see Seattle University School of Law Student Profile Type
  *      law/organizer/masonryfeed/
  *
- *      This content type layout is a smart layout for news items that must obey
+ *      This content type layout is a smart layout for profile items that must obey
  *      a masonry grid layout. In this iteration this layout will be dedicated
  *      to the student bio content type and is derived from the faculty bio.
  *
