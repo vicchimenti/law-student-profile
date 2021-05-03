@@ -13,7 +13,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 5.12
+ *      @version 5.13
  */
 
 
@@ -59,7 +59,7 @@
     var closeImageWrapper = '</div>';
     var openCard = '<div class="card h-100 w-100 border border-5 border-white">'
     var closeCard = '</div>';
-    var beginningHTML = '<div class="studentProfileMasonry contentItem col flex-fill w-50 g-1" aria-label="' + studentName + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="Main">';
+    var beginningHTML = '<div class="studentProfileMasonry contentItem col flex-fill w-50" aria-label="' + studentName + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="Main">';
     var endingHTML = '</div>';
     // var horizontalRule = '<hr class="lawProfileBorderRule" />'
 
@@ -84,9 +84,9 @@
      * */
     if (pullQuote != "") {
 
-        pullQuoteString = '<blockquote class="blockquote"><span class="card-text studentProfilePullQuote ms-1 mb-0">' + pullQuote + '</span></blockquote>';
+        // pullQuoteString = '<blockquote class="blockquote me-1"><span class="card-text studentProfilePullQuote">' + pullQuote + '</span></blockquote>';
 
-        // pullQuoteString = '<span class="card-text studentProfilePullQuote">' + pullQuote + '</span>';
+        pullQuoteString = '<span class="card-text studentProfilePullQuote">' + pullQuote + '</span>';
     }
 
 
