@@ -13,7 +13,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 5.14
+ *      @version 5.15
  */
 
 
@@ -59,7 +59,7 @@
     var closeImageWrapper = '</div>';
     var openCard = '<div class="card h-100 w-100 border border-5 border-white">'
     var closeCard = '</div>';
-    var beginningHTML = '<div class="studentProfileMasonry contentItem col flex-fill w-50" aria-label="' + studentName + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="Main">';
+    var beginningHTML = '<div class="studentProfileMasonry contentItem col flex-fill justify-content-center w-50" aria-label="' + studentName + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="Main">';
     var endingHTML = '</div>';
 
 
