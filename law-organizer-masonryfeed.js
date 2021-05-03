@@ -61,7 +61,7 @@
     var closeCard = '</div>';
     var beginningHTML = '<div class="studentProfileWrapper contentItem col flex-fill w-50" aria-label="' + studentName + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="Main">';
     var endingHTML = '</div>';
-    var horizontalRule = '<hr class="lawProfileBorderRule" />'
+    // var horizontalRule = '<hr class="lawProfileBorderRule" />'
 
 
 
@@ -148,7 +148,6 @@
     document.write(pullQuoteString);
     document.write(closeCardBody);
     document.write(closeCard);
-    document.write(horizontalRule);
     document.write(endingHTML);
 
 
