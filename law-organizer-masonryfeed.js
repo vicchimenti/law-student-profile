@@ -13,7 +13,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 5.4
+ *      @version 5.5
  */
 
 
@@ -55,7 +55,7 @@
     var pullQuoteString = '<p class="card-text studentProfilePullQuote visually-hidden">No pull quote provided</p>';
     var openCardBody = '<div class="card-body">';
     var closeCardBody = '</div>';
-    var openImageWrapper = '<div class="studentProfile standardContent">';
+    var openImageWrapper = '<div class="studentProfile">';
     var closeImageWrapper = '</div>';
     var openCard = '<div class="card h-100 w-100 border-0">'
     var closeCard = '</div>';
