@@ -13,7 +13,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 5.2
+ *      @version 5.3
  */
 
 
@@ -53,17 +53,10 @@
     var cardTitle = '<h3 class="card-title">' + contentName + '</h3>';
     var cardTitleLink = '<a href="' + fullTextLink + '">' + contentName + '</a>';
     var pullQuoteString = '<p class="card-text studentProfilePullQuote visually-hidden">No pull quote provided</p>';
-    // var emailAddressString = '<p class="card-text mb-0 d-flex justify-content-center justify-content-md-start text-center text-md-start">' + emailAddress + '</p>';
-    // var closeCardTitle = '</h3>';
     var openCardBody = '<div class="card-body">';
     var closeCardBody = '</div>';
-    // var openBodyWrapper = '<div class="col-md-8 d-flex align-items-center">';
-    // var closeBodyWrapper = '</div>';
     var openImageWrapper = '<div class="studentProfile standardContent">';
     var closeImageWrapper = '</div>';
-    // var openRow = '<div class="row g-0">';
-    // var closeRow = '</div>';
-    // var anchorWrap = '<div class="visually-hidden">' + anchorTag + '</div>';
     var openCard = '<div class="card h-100 w-100 border-0">'
     var closeCard = '</div>';
     var beginningHTML = '<div class="studentProfileWrapper contentItem col flex-fill w-50" aria-label="' + studentName + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="Main">';
