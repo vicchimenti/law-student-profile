@@ -52,7 +52,7 @@
     var primaryImageString = '<img src="' + summaryPhoto + '" class="card-img-top rounded-circle" alt="' + contentName + '">';
     var cardTitle = '<h3 class="card-title">' + contentName + '</h3>';
     var cardTitleLink = '<a href="' + fullTextLink + '">' + contentName + '</a>';
-    // var primaryTitleString = '<p class="card-text mb-0 d-flex justify-content-center justify-content-md-start text-center text-md-start">' + primaryTitle + '</p>';
+    var pullQuoteString = '<p class="card-text studentProfilePullQuote visually-hidden">No pull quote provided</p>';
     // var emailAddressString = '<p class="card-text mb-0 d-flex justify-content-center justify-content-md-start text-center text-md-start">' + emailAddress + '</p>';
     // var closeCardTitle = '</h3>';
     var openCardBody = '<div class="card-body">';
@@ -82,6 +82,16 @@
         primaryImageString = '<img src="' + summaryPhoto + '" class="card-img-top rounded-circle" alt="' + studentName + '">';
         cardTitle = '<h3 class="card-title">' + studentName + '</h3>';
         cardTitleLink = '<a href="' + fullTextLink + '" title="' + studentName + '">' + primaryImageString + cardTitle + '</a>';
+    }
+
+
+    /***
+     *  determine if the article contains full text content
+     * 
+     * */
+    if (pullQuote != "") {
+
+        pullQuoteString = '<p class="card-text studentProfilePullQuote">' + pullQuote + '</p>';
     }
 
 
@@ -138,21 +148,12 @@
     document.write(beginningHTML);
     document.write(anchorTag);
     document.write(openCard);
-    // document.write(openRow);
     document.write(openImageWrapper);
     document.write(cardTitleLink);
     document.write(closeImageWrapper);
-    // document.write(openBodyWrapper);
     document.write(openCardBody);
-    document.write(cardTitleLink);
-    document.write(primaryTitleString);
-    document.write(emailAddressString);
+    document.write(pullQuoteString);
     document.write(closeCardBody);
-    // document.write(closeBodyWrapper);
-    // document.write(closeRow);
-    document.write(openHiddenFields);
-    document.write(hiddenFields);
-    document.write(closeHiddenFields);
     document.write(closeCard);
     document.write(horizontalRule);
     document.write(endingHTML);
