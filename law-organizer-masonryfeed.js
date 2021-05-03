@@ -13,7 +13,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 5.11
+ *      @version 5.12
  */
 
 
@@ -84,7 +84,7 @@
      * */
     if (pullQuote != "") {
 
-        pullQuoteString = '<blockquote class="blockquote"><span class="card-text studentProfilePullQuote mb-0">' + pullQuote + '</span></blockquote>';
+        pullQuoteString = '<blockquote class="blockquote"><span class="card-text studentProfilePullQuote ms-1 mb-0">' + pullQuote + '</span></blockquote>';
 
         // pullQuoteString = '<span class="card-text studentProfilePullQuote">' + pullQuote + '</span>';
     }
