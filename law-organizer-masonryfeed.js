@@ -13,7 +13,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 5.8
+ *      @version 5.9
  */
 
 
@@ -59,7 +59,7 @@
     var closeImageWrapper = '</div>';
     var openCard = '<div class="card h-100 w-100 border-0">'
     var closeCard = '</div>';
-    var beginningHTML = '<div class="studentProfileWrapper contentItem col" aria-label="' + studentName + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="Main">';
+    var beginningHTML = '<div class="studentProfileMasonry contentItem col flex-fill w-50" aria-label="' + studentName + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="Main">';
     var endingHTML = '</div>';
     // var horizontalRule = '<hr class="lawProfileBorderRule" />'
 
