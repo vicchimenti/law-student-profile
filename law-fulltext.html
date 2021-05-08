@@ -1,22 +1,41 @@
-<article class="studentProfilePageWrapper contentItem">
-    <!-- <t4 type="content" name="Name" output="fulltext" use-element="true" filename-element="Name" modifiers="htmlentities" enable-dedit="false" />-->
-    <h1 id="pageTitle"><t4 type="content" name="Name of Student" output="normal" modifiers="striptags,htmlentities" /></h1>
-    <div class="studentProfilePage standardContent">
-      <div class="studentProfilePageImage">
-        <t4 type="content" name="Biographical Photo" output="normal" formatter="image/*" />
-      </div>
-      <div class="studentProfileInfo">
-        <t4 type="content" name="Graduating Class" output="selective-output" modifiers="striptags,htmlentities,nl2br" format="<p class=&quot;studentProfileGraduatingClass&quot;>Class of $value</p>" />
-        
-        <t4 type="content" name="Undergraduate Institution" output="selective-output" modifiers="" process-format="true" format="<p class=&quot;studentProfileUndergraduateInstitution&quot;>$value, " />   
-        <t4 type='content' name="Undergraduate Grad Year" output="selective-output" modifiers="" process-format="true" format="$value" />
-        <t4 type="content" name="Undergraduate Institution" output="selective-output" modifiers="" process-format="true" format="</p>" />   
-        
-        <t4 type="content" name="Current Place of Work" output="selective-output" modifiers="" process-format="true" format="<p class=&quot;studentProfilePlaceOfWork&quot;>$value</p>" />
-        
-      </div>
-      
-      <t4 type="content" name="Biography" output="selective-output" modifiers="medialibrary,nav_sections" process-format="true" format="<div class=&quot;studentProfileBiography&quot;>$value</div>" />
-      <div class="clearfix"></div>
-    </div>
-  </article>
+<article class="studentProfileWrapper contentItem card w-100">
+  <t4 type="meta" meta="html_anchor" />
+
+
+  <div class="studentProfile standardContent">
+    <div class="d-flex flex-column flex-lg-row mb-4">
+      <div class="studentProfilePageImage mx-auto">
+        <img  class="rounded-circle flex-shrink-0"
+              src="<t4 type='content' name='Biographical Photo' output='normal' formatter='path/*' />"
+              alt="Photo of <t4 type='content' name='Name of Student' output='normal' modifiers='striptags,htmlentities' />"
+              aria-label="Photo of <t4 type='content' name='Name of Student' output='normal' modifiers='striptags,htmlentities' />" />
+      </div> <!-- end .studentProfilePageImage -->
+      <div class="studentProfileInfo flex-grow-1 ms-3 mt-3 text-center text-lg-start">
+
+        <h2>
+          <t4 type="content" name="Name of Student" output="normal" modifiers="striptags,htmlentities" />
+        </h2>
+
+        <t4   type="content" name="Graduating Class" output="selective-output" modifiers="striptags,htmlentities,nl2br"
+              format="<p class=&quot;studentProfileGraduatingClass&quot;>Class of $value</p>" />
+
+        <t4   type="content" name="Undergraduate Institution" output="selective-output" modifiers="" process-format="true"
+              format="<p class=&quot;studentProfileUndergraduateInstitution&quot;>$value" /><t4 
+              type="content" name="Undergraduate Institution" 
+              output="selective-output" 
+              modifiers="" 
+              process-format="true"
+              format="<t4 type='content' name='Undergraduate Graduation Year' output='selective-output' modifiers='' process-format='true'
+              format=', $value' /></p>" />
+
+        <t4   type="content" name="Current Place of Work" output="selective-output" modifiers="" process-format="true"
+              format="<p class=&quot;studentProfilePlaceOfWork&quot;>$value</p>" />
+
+      </div> <!-- end .studentProfileInfo-->
+    </div> <!-- end .profile-header-->
+
+    <t4 type="content" name="Biography" output="selective-output" modifiers="medialibrary,nav_sections"
+    process-format="true" format="<div class=&quot;studentProfileBiography mb-4&quot;>$value</div>" />
+    <div class="clearfix"></div>
+  </div>
+</article>
