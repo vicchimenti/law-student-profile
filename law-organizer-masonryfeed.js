@@ -82,7 +82,6 @@
      * 
      * */
     if (pullQuote != "") {
-
         pullQuoteString = '<span class="card-text studentProfilePullQuote">' + pullQuote + '</span>';
     }
 
