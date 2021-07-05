@@ -13,7 +13,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 5.17
+ *      @version 5.18
  */
 
 
@@ -50,7 +50,7 @@
     var openHiddenFields = '<div class="hiddenSearchText visually-hidden">';
     var closeHiddenFields = '</div>';
     var primaryImageString = '<img src="' + summaryPhoto + '" class="card-img-top rounded-circle" alt="' + studentName + '">';
-    var cardTitle = '<h3 class="card-title">' + studentName + '</h3>';
+    var cardTitle = '<h3 class="card-title text-center">' + studentName + '</h3>';
     // var cardTitleLink = '<a href="">No Biography Provided</a>';
     var pullQuoteString = '<span class="card-text studentProfilePullQuote visually-hidden">No pull quote provided</span>';
     var openCardBody = '<div class="card-body">';
@@ -71,7 +71,7 @@
      * */
     if (biography != "") {
         primaryImageString = '<a href="' + fullTextLink + '" title="' + studentName + '"><img src="' + summaryPhoto + '" class="card-img-top rounded-circle" alt="' + studentName + '"></a>';
-        cardTitle = '<a href="' + fullTextLink + '" title="' + studentName + '"><h3 class="card-title">' + studentName + '</h3></a>';
+        cardTitle = '<a href="' + fullTextLink + '" title="' + studentName + '"><h3 class="card-title text-center">' + studentName + '</h3></a>';
         // cardTitleLink = '<a href="' + fullTextLink + '" title="' + studentName + '">' + primaryImageString + cardTitle + '</a>';
     }
 
@@ -96,7 +96,6 @@
     document.write(openCard);
     document.write(openImageWrapper);
     document.write(primaryImageString);
-    document.write(cardTitle);
 
     // document.write(cardTitleLink);
     document.write(closeImageWrapper);
