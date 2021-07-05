@@ -101,6 +101,8 @@
     // document.write(cardTitleLink);
     document.write(closeImageWrapper);
     document.write(openCardBody);
+    document.write(cardTitle);
+
     document.write(pullQuoteString);
     document.write(closeCardBody);
     document.write(closeCard);
