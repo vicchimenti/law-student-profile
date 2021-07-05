@@ -70,10 +70,9 @@
      * 
      * */
     if (biography != "") {
-
-        primaryImageString = '<img src="' + summaryPhoto + '" class="card-img-top rounded-circle" alt="' + studentName + '">';
-        cardTitle = '<h3 class="card-title">' + studentName + '</h3>';
-        cardTitleLink = '<a href="' + fullTextLink + '" title="' + studentName + '">' + primaryImageString + cardTitle + '</a>';
+        primaryImageString = '<a href="' + fullTextLink + '" title="' + studentName + '"><img src="' + summaryPhoto + '" class="card-img-top rounded-circle" alt="' + studentName + '"></a>';
+        cardTitle = '<a href="' + fullTextLink + '" title="' + studentName + '"><h3 class="card-title">' + studentName + '</h3></a>';
+        // cardTitleLink = '<a href="' + fullTextLink + '" title="' + studentName + '">' + primaryImageString + cardTitle + '</a>';
     }
 
 
@@ -96,6 +95,9 @@
     // document.write(anchorTag);
     document.write(openCard);
     document.write(openImageWrapper);
+    document.write(primaryImageString);
+    document.write(cardTitle);
+
     // document.write(cardTitleLink);
     document.write(closeImageWrapper);
     document.write(openCardBody);
