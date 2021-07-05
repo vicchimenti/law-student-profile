@@ -36,7 +36,6 @@
     var currentWork = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Current Place of Work' output='normal' modifiers='striptags,htmlentities' />");
     var biography = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Biography' output='normal' modifiers='medialibrary,nav_sections' />");
     var fullTextLink = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Name' output='fulltext' modifiers='striptags,htmlentities' />");
-    // var anchorTag = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='meta' meta='html_anchor' />");
     var contentID = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='meta' meta='content_id' />");
 
     
@@ -51,7 +50,6 @@
     var closeHiddenFields = '</div>';
     var primaryImageString = '<img src="' + summaryPhoto + '" class="card-img-top rounded-circle" alt="' + studentName + '">';
     var cardTitle = '<h3 class="card-title text-center">' + studentName + '</h3>';
-    // var cardTitleLink = '<a href="">No Biography Provided</a>';
     var pullQuoteString = '<span class="card-text studentProfilePullQuote visually-hidden">No pull quote provided</span>';
     var openCardBody = '<div class="card-body">';
     var closeCardBody = '</div>';
@@ -72,7 +70,6 @@
     if (biography != "") {
         primaryImageString = '<a href="' + fullTextLink + '" title="' + studentName + '"><img src="' + summaryPhoto + '" class="card-img-top rounded-circle" alt="' + studentName + '"></a>';
         cardTitle = '<a href="' + fullTextLink + '" title="' + studentName + '"><h3 class="card-title text-center">' + studentName + '</h3></a>';
-        // cardTitleLink = '<a href="' + fullTextLink + '" title="' + studentName + '">' + primaryImageString + cardTitle + '</a>';
     }
 
 
@@ -92,16 +89,12 @@
      * 
      * */
     document.write(beginningHTML);
-    // document.write(anchorTag);
     document.write(openCard);
     document.write(openImageWrapper);
     document.write(primaryImageString);
-
-    // document.write(cardTitleLink);
     document.write(closeImageWrapper);
     document.write(openCardBody);
     document.write(cardTitle);
-
     document.write(pullQuoteString);
     document.write(closeCardBody);
     document.write(closeCard);
