@@ -49,9 +49,9 @@
     var hiddenFields = '';
     var openHiddenFields = '<div class="hiddenSearchText visually-hidden">';
     var closeHiddenFields = '</div>';
-    var primaryImageString = '<img src="' + summaryPhoto + '" class="card-img-top rounded-circle" alt="' + contentName + '">';
-    var cardTitle = '<h3 class="card-title">' + contentName + '</h3>';
-    var cardTitleLink = '<a href="' + fullTextLink + '">' + contentName + '</a>';
+    var primaryImageString = '<img src="' + summaryPhoto + '" class="card-img-top rounded-circle" alt="' + studentName + '">';
+    var cardTitle = '<h3 class="card-title">' + studentName + '</h3>';
+    // var cardTitleLink = '<a href="">No Biography Provided</a>';
     var pullQuoteString = '<span class="card-text studentProfilePullQuote visually-hidden">No pull quote provided</span>';
     var openCardBody = '<div class="card-body">';
     var closeCardBody = '</div>';
@@ -96,7 +96,7 @@
     // document.write(anchorTag);
     document.write(openCard);
     document.write(openImageWrapper);
-    document.write(cardTitleLink);
+    // document.write(cardTitleLink);
     document.write(closeImageWrapper);
     document.write(openCardBody);
     document.write(pullQuoteString);
