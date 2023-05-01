@@ -49,7 +49,7 @@
         var hiddenFields = '';
         var openHiddenFields = '<div class="hiddenSearchText visually-hidden">';
         var closeHiddenFields = '</div>';
-        var primaryImageString = '<img src="' + summaryPhoto + '" class="card-img-top rounded-circle" alt="' + studentName + '">';
+        var primaryImageString = '<img src="' + bioPhoto + '" class="card-img-top rounded-circle" alt="' + studentName + '">';
         var cardTitle = '<h3 class="card-title text-center">' + studentName + '</h3>';
         var pullQuoteString = '<span class="card-text studentProfilePullQuote visually-hidden">No pull quote provided</span>';
         var openCardBody = '<div class="card-body">';
@@ -69,7 +69,7 @@
          * 
          * */
         if (biography != "") {
-            primaryImageString = '<a href="' + fullTextLink + '" title="' + studentName + '"><img src="' + summaryPhoto + '" class="card-img-top rounded-circle" alt="' + studentName + '"></a>';
+            primaryImageString = '<a href="' + fullTextLink + '" title="' + studentName + '"><img src="' + bioPhoto + '" class="card-img-top rounded-circle" alt="' + studentName + '"></a>';
             cardTitle = '<a href="' + fullTextLink + '" title="' + studentName + '"><h3 class="card-title text-center">' + studentName + '</h3></a>';
         }
     
