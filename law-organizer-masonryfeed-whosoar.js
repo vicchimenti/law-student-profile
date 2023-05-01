@@ -2,7 +2,8 @@
  *      @author Victor Chimenti, MSCS
  *      @file law-organizer-masonryfeed.js
  *      @see Seattle University School of Law Students Who Soar Profile
- *      law/organizer/masonryfeed/
+ *          id: 6401
+ *          law/organizer/masonryfeed/
  *
  *      This content type layout is a smart layout for profile items that must obey
  *      a masonry grid layout. In this iteration this layout will be dedicated
@@ -13,14 +14,8 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 5.19
- 
- 		4/13/2023 TF
-        
-       
-        Duplicated Law - Student Profile content type and replaced w-50 class with w20 to create a grid of five across instead of two.
-        
-        Updated 20230421 - vic
+ *      @version 6.0
+ * 
  */
 
 
