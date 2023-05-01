@@ -58,7 +58,7 @@
         var closeImageWrapper = '</div>';
         var openCard = '<div class="card h-100 border border-5 border-white">';
         var closeCard = '</div>';
-        var beginningHTML = '<div class="studentProfileMasonry contentItem col flex-fill w20" aria-label="' + studentName + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="Main">';
+        var beginningHTML = '<div class="studentProfileMasonry col flex-fill w20" aria-label="' + studentName + '" id="id' + contentID + '" data-position-default="Main" data-position-selected="Main">';
         var endingHTML = '</div>';
     
     
