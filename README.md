@@ -4,4 +4,5 @@ Will have layouts for masonry organizer to handle both student profile only grid
 
 ## TODO
 
--[] Review standardContent class in regards to image size in organizer layout
+-[x] Review standardContent class in regards to image size in organizer layout
+-[] Add Feature Photo for fulltext and meta
